@@ -1,0 +1,147 @@
+.faq {
+   background-color: 
+	rgba(12, 21, 28, 1);
+	// .faq__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px	
+	}
+
+	// .faq__name
+
+	&__name {
+		margin-top: 35px;
+		p{
+			color: 
+			rgba(255, 255, 255, 1);
+			text-align: center;
+			font-weight: 400;
+			font-size: 78px;
+			line-height: 68px;
+			font-family: 'Kanit', sans-serif;
+		}
+	}
+
+	// .faq__spoilers
+
+	&__spoilers {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+
+	// .faq__spoiler
+
+	&__spoiler {
+		display: flex;
+		justify-content: space-between;
+		gap: 80px;
+		align-items: center;
+		@media(max-width: 767px){
+			padding: 15px;
+			gap: 40px;
+		}
+	}
+}
+.spoiler {
+	width: 800px;
+	
+      padding: 20px 30px;
+		border: 1px solid 
+		rgba(85, 91, 96, 1);
+		border-radius: 100px;
+		@media(max-width: 767px){
+			padding: 10px 25px;
+			width: 320px;
+		}
+	// .spoiler__text
+
+	&__text {
+		padding: 15px;
+		@media(max-width: 767px){
+			padding: 15px;
+		}
+		p:nth-child(1){
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 28px;
+			color: rgba(255, 255, 255, 1);
+			margin-bottom: 10px;
+			@media(max-width: 767px){
+				font-size: 20px;
+			}
+		}
+		.opts{
+			display: none;
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 28px;
+			color: rgba(255, 255, 255, 1);
+			margin-bottom: 10px;
+			@media(max-width: 767px){
+				font-size: 14px;
+			}
+		}
+		.opts.active{
+			display: inline-block;
+		}
+	}
+
+	// .spoiler__arrow
+
+	&__arrow {
+		color: #fff;
+		width: 10px;
+		height: 10px;
+		position: relative;
+	}
+	&__arrow.opt::before {
+      content: '';
+		width: 20px;
+		height: 1px;
+		background-color: 
+		rgba(0, 137, 189, 1);
+		position: absolute;
+		top: 0px;
+		transform: rotate(-40deg);
+		left: -30px;
+	}
+	&__arrow.opt::after {
+      content: '';
+		width: 20px;
+		height: 1px;
+		background-color: 
+		rgba(0, 137, 189, 1);
+		position: absolute;
+		top: 0px;
+		transform: rotate(40deg);
+		left: -15px;
+	}
+	&__arrow::before {
+      content: '';
+		width: 20px;
+		height: 1px;
+		background-color: 
+		rgba(0, 137, 189, 1);
+		position: absolute;
+		top: 0px;
+		transform: rotate(40deg);
+		left: -30px;
+	}
+	&__arrow::after {
+      content: '';
+		width: 20px;
+		height: 1px;
+		background-color: 
+		rgba(0, 137, 189, 1);
+		position: absolute;
+		top: 0px;
+		transform: rotate(-40deg);
+		left: -15px;
+	}
+}

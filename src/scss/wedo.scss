@@ -1,0 +1,134 @@
+.wedo {
+	background-color: #fff;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+
+	// .wedo__wrapper
+
+	&__wrapper {
+		padding: 35px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	// .wedo__text
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 20px;
+		p:nth-child(1){
+			font-family: 'Syne', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			text-align: center;
+			line-height: 20px;
+			color: rgba(0, 0, 0, 1);
+		}
+		p:nth-child(2){
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 78px;
+			text-align: center;
+			line-height: 68px;
+			color: rgba(0, 0, 0, 1);
+			@media(max-width: 767px){
+            font-size: 40px;
+				line-height: 44px;
+				text-align: center;
+			}
+		}
+		p:nth-child(3){
+			font-family: 'Kanit', sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			text-align: center;
+			line-height: 24px;
+			color:rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	// .wedo__columns
+
+	&__columns {
+		display: grid;
+		grid-template-columns: minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr);
+		grid-template-rows: 50% 50%;
+		gap: 10px;
+		@media(max-width:767px){
+			grid-template-columns: minmax(50px, 1fr);
+			grid-template-rows: repeat(6, 15%)
+		}
+	}
+
+	// .wedo__column
+
+	&__column {
+		//w 50px
+		//width: 559px;
+		background-color: rgba(222, 244, 254, 1);
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media(max-width: 767px){
+			gap: 0px;
+		}
+	}
+
+	// .wedo__img
+
+	&__img {
+      
+		img{
+         
+		}
+	}
+
+	// .wedo__desc
+
+	&__desc {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .wedo__par
+
+	&__par {
+		@media(max-width:767px){
+			padding-top: 40px;
+		}
+		p{
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 36px;
+			@media(max-width: 767px){
+         font-size: 20px;
+			line-height: 24px;
+			}
+		}
+	}
+
+	// .wedo__arr
+
+	&__arr {
+		background-color: #fff;
+		width: 78px;
+		height: 78px;
+		border-radius: 50%;
+		position: relative;
+		bottom: 8px;
+		img{
+			position: absolute;
+			left: 35%;
+			top: 35%;
+		}
+
+		@media(max-width: 767px){
+
+		}
+	}
+}

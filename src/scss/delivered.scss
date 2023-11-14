@@ -1,0 +1,217 @@
+.delivered {
+background-color: #fff;
+border-bottom-right-radius: 120px;
+border-bottom-left-radius: 120px;
+	// .delivered__wrapper
+
+	&__wrapper {
+		padding: 30px;
+	}
+
+	// .delivered__items
+
+	&__items {
+		display: flex;
+		gap: 30px;
+		@media(max-width: 767px){
+      flex-direction: column;
+		gap: 15px;
+		}
+	}
+
+	// .delivered__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		@media(max-width: 767px){
+			gap: 20px;
+		}
+	}
+
+	// .delivered__text
+
+	&__text {
+		p{
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 78px;
+			line-height: 78px;
+			color: 
+			rgba(12, 21, 28, 1);
+			@media(max-width: 767px){
+				font-size: 40px;
+				line-height: 44px;
+			}
+		}
+	}
+
+	// .delivered__par
+
+	&__par {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		p{
+			font-family: 'Kanit', sans-serif;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 24px;
+			color: rgba(12, 21, 28, 1);
+			text-align-last: left;
+		}
+		p:nth-child(2){
+			@media(max-width: 767px){
+               display: none;
+			}
+		}
+	}
+
+	// .delivered__btn
+
+	&__btn {
+		padding: 10px 15px;
+		border-radius: 20px;
+		width: 300px;
+		display: flex;
+		gap: 25px;
+		background-color: 
+		rgba(1, 138, 190, 1);
+		button{
+			background-color:rgba(1, 138, 190, 1);
+         color: white;
+			font-size: 44px;
+			line-height: 40px;
+			font-family: 'Kanit', sans-serif;
+		}
+		img{
+			margin-top: 15px;
+			display: inline-block;
+         width: 40px;
+			height: 40px;
+		}
+	}
+
+	// .delivered__about
+
+	&__about {
+		margin-top: 30px;
+		p:nth-child(1){
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 48px;
+			margin-bottom: 25px;
+			color: 
+			rgba(12, 21, 28, 1);
+			position: relative;
+			margin-left: 50px;
+		}
+		p:nth-child(1)::before{
+			content: '';
+			position: absolute;
+			top: 24px;
+			left: -50px;
+			width: 50px;
+			height: 2px;
+			background-color: lightgreen;
+			border: 1px solid lightgreen;
+			transform: rotate(180deg);
+		}
+		p:nth-child(2){
+			font-family: 'Kanit', sans-serif;
+			color: 
+			rgba(12, 21, 28, 1);
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+.item-delivered {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+
+	// .item-delivered__one
+
+	&__one {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		img:nth-child(1){
+			@media(max-width: 767px){
+         max-width: 158px;
+			max-height: 154px;
+			}
+			opacity: 0;
+         transform: translateY(-120%);
+			transition: all 0.8s ease 2s;
+		}
+		img:nth-child(2){
+			
+			@media(max-width: 767px){
+				max-width: 115px;
+				max-height: 112px;
+			}
+			opacity: 0;
+         transform: translateX(-520%);
+			transition: all 0.8s ease 3s;
+		}
+	}
+	&__one.active{
+		img:nth-child(1){
+			opacity: 1;
+         transform: translateY(0);
+		}
+		img:nth-child(2){
+			margin-left: 40px;
+			opacity: 1;
+         transform: translateX(0);
+		}
+	}
+
+	// .item-delivered__two
+
+	&__two {
+		//transform: translateY(120px);
+		img{
+			@media(max-width: 767px){
+				max-width: 158px;
+				max-height: 180px;
+			}
+			opacity: 0;
+			transform: translateX(200%);
+			transition: all 0.8s ease 1s;
+		}
+	}
+	&__two.active{
+		img{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+///CONTROL CLASSES
+/// 
+
+.disp-onlyfs{
+	@media(max-width: 767px){
+         display: none;
+	}
+}
+.disp-onlysm{
+	display: none;
+	@media(max-width: 767px){
+		display: flex;
+}   
+}
+.no-text{
+	display: none;
+	@media(max-width: 767px){
+      display: inline-block;
+	} 
+}
+
+
+

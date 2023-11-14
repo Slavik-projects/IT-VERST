@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title":"Main",
+})
+
+<body class="body-lock">
+	<div class="wrapper">
+		@@include('html/header.html',{
+		"":"",
+		})
+		<main class="page">
+			<div class="contact">
+				<div class="contact__wrappeer">
+					<div class="contact__items">
+						<div class="contact__img">
+							<img src="img/work/contact.jpg" alt="">
+						</div>
+                  <div class="forms">
+							<div class="forms__wrapper">
+								<div class="forms__body">
+									<form action="#" class="form__items item item-modif">
+										<div class="item-1">
+											<label for="name">NAME</label>
+											<input class="name" id="name" type="text" />
+											<img src="img/forms/user.png" alt="">
+										</div>
+										<div class="item-2">
+											<div class="item-2-1 emai-mod">
+												<label for="email">EMAIL</label>
+												<input class="email email-mod" id="email" type="email" />
+												<img src="img/forms/mail.png" alt="">
+											</div>
+										</div>
+										<div class="item-2-2">
+											<label for="phone">PHONE</label>
+											<input class="phone" id="phone" type="phone" />
+											<img src="img/forms/phone.png" alt="">
+										</div>
+										<div class="item-3">
+											<label for="pen">MESSAGE</label>
+											<input class="phone" id="pen" type="phone" />
+											<img src="img/forms/pen.png" alt="">
+										</div>
+										<div class="attach">
+											<label for="file-upload">ATTACH FILE</label>
+											<input id="file-upload" type="file" />
+										</div>
+										<div class="item__check">
+											<input id="check" class="cbox" type="checkbox" checked>
+											<label for="check" class="input-helper input-helper--checkbox">I agree to the <span>Privacy
+													Policy</span>
+											</label>
+										</div>
+										<div class="item__button">
+											<button>Submit<img src="img/forms/arrow.png" alt=""></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact__location">
+						<div class="contact__its">
+							<div>
+								<img src="" alt="" class="_icon-loc">
+								<p class="con-text">Location</p>
+							</div>
+							<p>DUBLIN, IRELAND</p>
+						</div>
+						<div class="contact__its">
+							<div>
+								<img src="#" alt="" class="_icon-fi_80599">
+								<p class="con-text">EMAIL</p>
+							</div>
+							<p>contact@IronSoft.dev</p>
+						</div>
+						<div class="contact__its">
+							<div>
+								<img src="#" alt="" class="_icon-phone">
+								<p class="con-text">PHONE</p>
+							</div>
+							<p>+353-830-933-8221</p>
+						</div>
+						<div class="contact__its">
+							<div>
+								<img src="#" alt="" class="_icon-sound">
+								<p class="con-text">SOCIALS</p>
+							</div>
+							<img src="#" alt="" class="_icon-ins-color">
+							<img src="#" alt="" class="_icon-fb">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	@@include('html/footer.html',{})
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

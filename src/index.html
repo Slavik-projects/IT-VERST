@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title":"Load",
+})
+<body>
+	<div class="wrapper">
+		<!--@@include('html/header.html',{
+		"title":"loading",
+		})-->
+		<main class="">
+			<div class="back">
+				<div class="loading">
+				<p data-text="LOADING" class="loadtype" ></p>
+			</div>
+			</div>
+		</main>
+		<!--@@include('html/footer.html',{})-->
+	</div>
+	<script>
+      var message = "IRONSOFT";
+		var speed = 150;
+		var i = 0;
+		function autoTyper(){
+			document.querySelector('.loadtype').innerHTML += message.charAt(i);
+			i++;
+
+			setTimeout(autoTyper, speed);
+		}
+
+		autoTyper();
+         j=0;
+			function increase(){
+            j++;
+				if(j===2){
+					console.log(j);
+					window.location ="main.html";
+				}
+			}
+
+			setInterval(increase, 600);
+		console.log('hey')
+	</script>
+</body>
+</html>

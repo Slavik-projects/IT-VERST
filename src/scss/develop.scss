@@ -1,0 +1,187 @@
+.devprodcts {
+	background-color: #fff;
+	@media(max-width: 767px){
+
+	}
+
+	// .devprodcts__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		//justify-content: center;
+		gap: 30px;
+		padding: 40px 30px;
+	}
+
+	// .devprodcts__text
+
+	&__text {
+		p{
+			font-family: 'Kanit', sans-serif;
+			font-size: 78px;
+			line-height: 68px;
+			text-align: center;
+			span{
+         color: rgba(1, 138, 190, 1);
+			}
+		}
+	}
+
+	// .devprodcts__items
+
+	&__items {
+		//display: flex;
+		display: grid;
+		grid-template-columns: repeat(4, 368px);
+		grid-template-rows: repeat(1, 284px);
+		gap: 30px;
+		margin: 0px 30px;
+	}
+
+	// .devprodcts__item
+
+	&__item {
+		min-width: 100%;
+		min-height: 100%;
+		//position: relative;
+		//flex: 0 0 398px;
+		//display: flex;
+		//flex-direction: column;
+		//gap: 80px;
+		//height: 284px;
+		//width: 398px;
+		
+		border: 1px solid rgba(226, 226, 226, 1);
+		border-radius: 48px;
+		//max-height: 398px;
+		//max-width: 336px;
+		padding: 60px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		img{
+			max-width: 45px;
+			max-height: 45px;
+         object-fit: cover;
+		}
+		p{
+			text-align: left;
+		}
+		.devtxt{
+			font-family: 'Kanit', sans-serif;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 36px;
+			color: 	rgba(12, 21, 28, 1);
+		}
+		p:last-child{
+			font-family: 'Kanit', sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 24px;
+			color: rgba(0, 0, 0, 0.7);
+		}
+	}
+}
+
+.devprodcts__item:nth-child(1){
+
+   svg{
+
+	}
+}
+/*.it2{
+	position: relative;
+   svg{
+   position: absolute;
+	left: -32.5px;
+	top: 40px;
+	}
+}
+.it3{
+	position: relative;
+   svg{
+   position: absolute;
+	left: -353px;
+	top: 39px;
+	}
+}
+.it4{
+	position: relative;
+   .svg-4{
+   position: absolute;
+	top: 0px;
+	left: -368.5px;
+	}
+	.svg-5{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	}
+	.svg-6{
+		position: absolute;
+		top: 0px;
+		left: -335px;
+	}
+}*/
+
+.it1{
+	position: relative;
+	.svg-1{
+		position: absolute;
+		top: 0;
+		left: 30px;
+
+		/*path{
+			stroke-dasharray:1107.6790771484375;
+			stroke-dashoffset: 1107.6790771484375;
+			animation: dash 5s linear alternate infinite;
+		}*/
+		}
+
+		/*.svg-2{
+			position: absolute;
+		   top: 46px;
+		   left: 364px;
+		}*/
+}
+
+/*@keyframes dash {
+	from {
+		stroke-dashoffset: 5000;
+	}
+	to{
+		stroke-dashoffset: 0;
+	}
+}*/
+.it2{
+	position: relative;
+	.svg-3{
+		position: absolute;
+		top: 44px;
+		left: 45px;
+		}
+}
+.it3{
+	position: relative;
+	.svg-4{
+		position: absolute;
+		top: -7px;
+		left: -2px;
+		}
+		.svg-5{
+			position: absolute;
+			top: -9px;
+			left: 39px;
+		}
+}
+.it4{
+	position: relative;
+	.svg-6{
+   position: absolute;
+	top: 48px;
+	left: -33px;
+	}
+}

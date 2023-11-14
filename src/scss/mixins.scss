@@ -1,0 +1,15 @@
+@mixin font($ff, $ff, $fw, $fs ) {
+	font-family: $ff;
+	font-family: $ff;
+	font-weight: $fw;
+	font-style: $fs;
+}
+//@include font('Heebo', 'Times', 600px, italic)
+
+
+//Templates
+// %tplborder {
+	//border-bottom: 3px solid red;
+//}
+
+//@extend tlpborder;
